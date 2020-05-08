@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("hug-happy-valentine.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .85);
+    background-blend-mode: overlay;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    color: #071a52;
+    font-family: "Titan One";
+    font-size: 2.4rem;
+    text-shadow: 1px 1px 0 #2d2d2d, 4px 5px 0 #FFAEAE;
+    transform: rotate(-4deg);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.main h4 {
+    color: #ffd615;
+    margin: 40px 0 0 0;
+    font-size: 1.25rem;
+    font-family: "Roboto Mono"
+}
+
+form {
+    padding-top: 40px;
+    line-height: 10px;
+}
+
+input[type=text] {
+    background: transparent;
+    border-radius: 7px;
+    border: 3px solid #fff;
+    color: white;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#enterName {
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    text-align: left;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.btn-20 {
+    color: #fff;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: inset 0px 1px 25px 7px rgba(242, 249, 250, 1);
+    animation: btn-20-animation 1s linear both infinite alternate;
+}
+
+@keyframes btn-20-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(-15px);
+        letter-spacing: .15em;
+        color: #444444;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+        background-color: #ff304f;
+    }
+}
+
+
+/* .btnIcon:hover {
+    filter: contrast(140%);
+} */
+
+#explanation,
+#resultNumber {
+    visibility: hidden;
+    font-family: "Titan One";
+    padding-top: 10px;
+    line-height: 2.5rem;
+    text-align: center;
+    width: 380px;
+    margin: auto;
+}
+
+#explanation {
+    color: #FFAEAE;
+    font-size: 1.7rem;
+}
+
+#resultNumber {
+    font-size: 3.5rem;
+}
+
+#tryAgain {
+    font-family: "Roboto Mono";
+    visibility: hidden;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+    animation: btn-19-animation 1s linear both infinite;
+    animation-direction: alternate;
+    box-shadow: inset 0px 1px 17px 7px rgba(242, 249, 250, 1);
+}
+
+@keyframes btn-19-animation {
+    0% {
+        transform: rotateY(0deg);
+        border-radius: 12px;
+        background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+    }
+    25% {
+        transform: rotateY(10deg);
+        border-radius: 24px;
+        background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+    }
+    50% {
+        transform: rotateY(20deg);
+        border-radius: 36px;
+        background: linear-gradient(to right, rgb(255, 0, 153), rgb(73, 50, 64));
+    }
+    75% {
+        transform: rotateY(30deg);
+        border-radius: 48px;
+        background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+    }
+    100% {
+        transform: rotateY(40deg);
+        background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+    }
+}
